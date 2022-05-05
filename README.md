@@ -14,5 +14,10 @@ There will be a mix of interactive, yes no, multiple choice and scenarios based 
 There is an optional Google Form survey at the end of the assessment to help me know more about the project's uses. I would appreciate any feedback or suggestions you have. Please note that the survey will collect data from you, such as your feedback about the project. Moreover, it may collect emails for me to contact you in case you have any questions regarding the project. You have the option to **NOT** provide email address. 
 You can find the form here: [] ()
 
+### Acknowledgement
+This project used Bootstrap and JQuery to create, with templates taken from the internet. I will try to list the sources I used below.
+Browser window: [W3Schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_browser_window2)
+Facebook in browser login: [mrd0x](https://github.com/mrd0x/BITB)
+
 ### Contact the author
 If you want to contact me for any reason, I am happy to receive your emails. You can reach me at [cyber@luan.contact](mailto:cyber@luan.contact)
