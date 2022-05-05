@@ -16,7 +16,9 @@ You can find the form here: [] ()
 
 ### Acknowledgement
 This project used Bootstrap and JQuery to create, with templates taken from the internet. I will try to list the sources I used below.
+
 Browser window: [W3Schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_browser_window2)
+
 Facebook in browser login: [mrd0x](https://github.com/mrd0x/BITB)
 
 ### Contact the author
