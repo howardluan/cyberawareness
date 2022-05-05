@@ -14,7 +14,7 @@
             <div class="col-12 col-md-8 col-lg-6 col-xl-5">
                 <div class="card shadow-2-strong" style="border-radius: 1rem;">
                     <div class="card-body p-5 text-center">
-                        <p>Did you put in your REAL Facebook Account and Password in the Login Page?</p>
+                        <p>Did you put in your Facebook Account and Password in the previous Page? This including using our test account.</p>
                         <button class="btn btn-lg btn-block btn-success mb-2" type="submit" id="yes">YES</button>
                         <button class="btn btn-lg btn-block btn-danger mb-2" type="submit" id="no">NO</button>
                     </div>
@@ -29,16 +29,22 @@
                     If the link shows on <b>the very top of your screen</b>, you are much likely safe. If not, do NOT type anything and close the window immediately. <br />
                     <b>Easier way? Only go to trusted website or the website you know.</b>
                 </p>
-                <button class="btn btn-lg btn-block btn-primary mb-2" onclick="location.href='../index.html'" id="next">NEXT QUESTION</button>
+                <center><button class="btn btn-lg btn-block btn-primary mb-2" onclick="window.open('../q/q1.html', '_top')" id="next">NEXT QUESTION</button></center>
             </div>
         </div>
     </div>
     <script  type="text/javascript">
         $("#yes").click(function() {
+            $("body").css('background-color', 'red');
+            $("#no").hide();
+            $("#yes").hide();
             $("#more").css('display', 'block');
             $("#message").text("Congratulations,  I now have your Facebook account. Just kidding, I DO NOT have your Facebook account. The information you put in was never leave your computer, not even on the Internet. You are safe with your current password. However, the previous login page was a Facebook phishing page and you should NOT put in your password.");
         });
         $("#no").click(function() {
+            $("body").css('background-color', 'green');
+            $("#yes").hide();
+            $("#no").hide();
             $("#more").css('display', 'block');
             $("#message").text("Great job, you did NOT fall for the phishing. The previous login page was, in fact, a Facebook phishing page.");
         });
