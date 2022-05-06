@@ -16,43 +16,54 @@
             <div class="col-12 col-md-8 col-lg-6 col-xl-5">
                 <div class="card shadow-2-strong" style="border-radius: 1rem;">
                     <div class="card-body p-5 text-center">
-                        <h5>You received an email regarding login attempt blocked. The message of the email is shown below. What would you do?</h5>
-                        <button class="btn btn-lg btn-block btn-light mb-2" type="submit" id="no">DELETE</button>
-                        <button class="btn btn-lg btn-block btn-light mb-2" type="submit" id="yes">click on NOT ME!</button>
-                        <button class="btn btn-lg btn-block btn-light mb-2" type="submit" id="yes2">click on YES ME!</button>
+                        <h5>Your best friend send you a link to Facebook using SMS. When you click on the link, it shows the page below. Will you login?</h5>
+                        <button class="btn btn-lg btn-block btn-success mb-2" type="submit" id="yes">YES</button>
+                        <button class="btn btn-lg btn-block btn-danger mb-2" type="submit" id="no">NO</button>
                         <div id="more" style="display: none;">
                             <h4 id="message"></h4>
                             <p>
-                                If you looks carefully to the sender's email address, it is not from Google, making it the phishing emails.
+                                If you looks carefully to the link below, there is an extra <b>&quot; s &quot;</b> at the end of facebook, making it the phishing site.
                             </p>
-                            <button class="btn btn-lg btn-block btn-primary mb-2" onclick="window.open('../q/q2.html', '_top')" id="next">NEXT QUESTION</button>
+                            <button class="btn btn-lg btn-block btn-primary mb-2" onclick="window.open('../q/q4.html', '_top')" id="next">NEXT QUESTION</button>
                         </div>
-                        <img src="../img/gg.jpg">
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
+    
+    <div class="container">
+        <div class="row">
+          <div class="column left">
+            <span class="dot" style="background:#ED594A;"></span>
+            <span class="dot" style="background:#FDD800;"></span>
+            <span class="dot" style="background:#5AC05A;"></span>
+          </div>
+          <div class="column middle">
+            <input type="text" value="https://facebooks.com">
+          </div>
+          <div class="column right">
+            <div style="float:right">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </div>
+        </div>
+      
+        <div>
+          <img src="../img/fb.png">
+        </div>
+    </div>
     <script  type="text/javascript">
         $("#yes").click(function() {
-            $("#yes2").hide();
             $("body").css('background-color', 'red');
             $("#no").hide();
             $("#yes").hide();
             $("#more").css('display', 'block');
-            $("#message").text("Incorrect. This is actually a phishing.");
-        });
-        $("#yes2").click(function() {
-            $("body").css('background-color', 'red');
-            $("#no").hide();
-            $("#yes").hide();
-            $("#yes2").hide();
-            $("#more").css('display', 'block');
-            $("#message").text("Incorrect. This is actually a phishing.");
+            $("#message").text("Incorrect. This page is actually a phishing site.");
         });
         $("#no").click(function() {
-            $("#yes2").hide();
             $("body").css('background-color', 'green');
             $("#no").hide();
             $("#yes").hide();
